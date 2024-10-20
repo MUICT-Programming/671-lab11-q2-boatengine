@@ -11,11 +11,9 @@ for i in range(n):
     list2.append(value)
     
 def summation(list1,list2):
-    global n
-    update_list = [0]*n 
+    update_list = []
     for i in range(n):
-        update_list[i] = list1[i]+list2[i]
-    # return list1+list2
+        update_list.append(list1[i]+list2[i])
     return update_list
 
 def find_min_max(update_list):
